@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuarta Actividad</title>
+</head>
+<body>
+<canvas id="Canvas" width="500" height="500"></canvas>
+
+<script>
+    var canvas = document.getElementById("Canvas");
+    var ctx = canvas.getContext("2d");
+
+    // CUADRO ROJO
+    ctx.fillStyle = "rgba(255, 99, 71, 0.7)";
+    ctx.fillRect(20, 20, 70, 70);
+
+    // CUADRO AZUL
+    ctx.fillStyle = "rgba(173, 216, 230, 0.7)";
+    ctx.fillRect(60, 60, 70, 70);
+
+    // CUADRO VERDE
+    ctx.fillStyle = "rgba(0, 128, 0, 1.0)";
+    ctx.fillRect(100, 100, 70, 70);
+
+    // PRIMER TRIÁNGULO
+    ctx.beginPath();
+    ctx.moveTo(180, 150); 
+    ctx.lineTo(250, 90); 
+    ctx.lineTo(200, 300); 
+    ctx.closePath(); 
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+    ctx.fillStyle = "rgba(173, 216, 230, 0.7)";
+    ctx.fill();
+
+    // CUADRADO TRANSPARENTE
+    ctx.beginPath();
+    ctx.rect(160, 160, 70, 70);
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = "rgba(0, 0, 0, 0.5)";
+    ctx.stroke();
+
+    // SEGUNDO CUADRADO ROJO
+    ctx.beginPath();
+    ctx.rect(220, 220, 70, 70);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = "red";
+    ctx.stroke();
+
+    // CÍRCULO
+    ctx.strokeStyle = "#ff5733";
+    ctx.beginPath();
+    ctx.arc(90, 380, 50, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    // CÍRCULO 2
+    ctx.fillStyle = "#33ff61";
+    ctx.beginPath();
+    ctx.arc(170, 380, 50, 0, 2 * Math.PI);
+    ctx.fill();
+
+    // CÍRCULO 3
+    ctx.strokeStyle = "#33caff";
+    ctx.beginPath();
+    ctx.arc(86, 360, 50, 0.9, 0.7 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    // TEXTO
+    ctx.font = "30px Algerian";
+    ctx.fillText("Hola mundo!", 300, 50);
+    ctx.font = "30px Verdana";
+    ctx.strokeText
+
+    const gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+    gradient.addColorStop("0", "yellow");
+    gradient.addColorStop("0.5", "black");
+    gradient.addColorStop("1.0", "red");
+
+    ctx.strokeStyle = gradient;
+    ctx.strokeText("Big smile!", 10, 90);
+    
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
